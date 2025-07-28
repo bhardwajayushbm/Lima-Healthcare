@@ -27,7 +27,6 @@ const Navigation: React.FC = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
           <div className="flex items-center">
             <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-teal-500 rounded-lg flex items-center justify-center mr-3">
               <span className="text-white font-bold text-lg">L</span>
@@ -35,7 +34,6 @@ const Navigation: React.FC = () => {
             <span className="text-2xl font-bold text-gray-800">Lima HealthCare</span>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
@@ -69,7 +67,6 @@ const Navigation: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
@@ -78,7 +75,6 @@ const Navigation: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden`}>

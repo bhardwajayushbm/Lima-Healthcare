@@ -9,7 +9,6 @@ const Hero_: React.FC = () => {
     }
   };
 
-  // ✅ Load ServiceNow chatbot script safely
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://bangmetricllcdemo2.service-now.com/scripts/sn_csm_ec.js?v=5.6';
@@ -32,7 +31,7 @@ const Hero_: React.FC = () => {
     };
   }, []);
 
-  // ✅ Open chatbot on button click
+ 
   const openChatbot = () => {
     if (window.SN_CSM_EC && typeof window.SN_CSM_EC.showWidget === 'function') {
       window.SN_CSM_EC.showWidget();
@@ -43,7 +42,7 @@ const Hero_: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center">
-      {/* Background */}
+ 
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg"
@@ -53,7 +52,6 @@ const Hero_: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/70 to-teal-700/60"></div>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
           <div className="animate-fade-in-up">
@@ -69,7 +67,6 @@ const Hero_: React.FC = () => {
               Experience professional healthcare with compassion, convenience, and excellence.
             </p>
 
-            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <button 
                 onClick={scrollToServices}
@@ -79,7 +76,7 @@ const Hero_: React.FC = () => {
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
 
-              {/* ✅ Chatbot Button */}
+            
               <button 
                 onClick={openChatbot}
                 className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white hover:bg-blue-100 transition-all duration-300 flex items-center justify-center"
@@ -89,7 +86,7 @@ const Hero_: React.FC = () => {
               </button>
             </div>
 
-            {/* Stats */}
+  
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start mb-2">

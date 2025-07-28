@@ -28,7 +28,6 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             About Lima HealthCare
@@ -41,7 +40,6 @@ const About: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          {/* Content */}
           <div>
             <div className="mb-8">
               <div className="flex items-center mb-4">
@@ -79,7 +77,6 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Image */}
           <div className="relative">
             <img 
               src="https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg"
@@ -95,7 +92,6 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Values Grid */}
         <div>
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Core Values</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

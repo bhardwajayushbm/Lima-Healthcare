@@ -72,7 +72,6 @@ const Services: React.FC = () => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Healthcare Services
@@ -84,7 +83,6 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => (
             <div 
@@ -115,7 +113,6 @@ const Services: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl p-8 md:p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to Experience Home Healthcare?</h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
