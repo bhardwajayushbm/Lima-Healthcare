@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
 import CountUp from 'react-countup';
+import bgimgnew from '../assets/bgimgnew.png';
 
 const Hero_: React.FC = () => {
   const scrollToServices = () => {
@@ -63,7 +64,7 @@ SN_CSM_EC.init({
  
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg"
+          src={bgimgnew}
           alt="Healthcare professional"
           className="w-full h-full object-cover"
         />
