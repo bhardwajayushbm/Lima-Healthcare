@@ -33,7 +33,7 @@ const Nav: React.FC = () => {
               <span className="text-white font-bold text-lg">L</span>
             </div>
             <span
-              className={`text-2xl font-bold ${
+              className={`text-xl font-bold ${
                 isScrolled ? 'text-gray-800' : 'text-white'
               }`}
             >

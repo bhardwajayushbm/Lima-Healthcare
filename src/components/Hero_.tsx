@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
 import CountUp from 'react-countup';
 import bgimgnew from '../assets/bgimgnew.png';
+import bgimage from '../assets/bgimage.png';
+
 
 const Hero_: React.FC = () => {
   const scrollToServices = () => {
@@ -64,32 +66,32 @@ SN_CSM_EC.init({
  
       <div className="absolute inset-0 z-0">
         <img 
-          src={bgimgnew}
+          src={bgimage}
           alt="Healthcare professional"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/70 to-teal-700/60"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
           <div className="animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Bringing Quality Healthcare 
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-green-300">
                 {' '}To Your Doorstep
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed py-2">
               Lima HealthCare provides comprehensive medical services in the comfort of your home. 
               Experience professional healthcare with compassion, convenience, and excellence.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-6">
+            <div className="flex flex-col sm:flex-row gap-3 mb-3">
               <button 
                 onClick={scrollToServices}
-                className="bg-gradient-to-r from-teal-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-teal-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center group"
+                className="bg-gradient-to-r from-teal-500 to-green-500 text-white px-4 py-2 rounded-lg font-semibold text-lg hover:from-teal-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center group"
               >
                 View Our Services
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -98,9 +100,8 @@ SN_CSM_EC.init({
             
               <button 
                 onClick={scrollToContact}
-                className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white hover:bg-blue-100 transition-all duration-300 flex items-center justify-center"
+                className="bg-white text-blue-900 px-5 py-3 rounded-lg font-semibold text-lg border-2 border-white hover:bg-blue-100 transition-all duration-300 flex items-center justify-center"
               >
-                <Bot className="w-5 h-5 mr-2" />
                 Get in touch
               </button>
             </div>
