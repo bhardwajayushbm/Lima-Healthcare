@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
+import Countup from 'react-countup';
 
 const Hero_: React.FC = () => {
   const scrollToServices = () => {
@@ -9,12 +10,19 @@ const Hero_: React.FC = () => {
     }
   };
 
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if(element){
+      element.scrollIntoView({behavior: 'smooth' });
+    }
+  }
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://bangmetricllcdemo2.service-now.com/scripts/sn_csm_ec.js?v=5.6';
     script.async = true;
 
-    // When script loads, init chatbot
+    
     script.onload = () => {
       if (window.SN_CSM_EC) {
         window.SN_CSM_EC.init({
@@ -78,11 +86,11 @@ const Hero_: React.FC = () => {
 
             
               <button 
-                onClick={openChatbot}
+                onClick={scrollToContact}
                 className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white hover:bg-blue-100 transition-all duration-300 flex items-center justify-center"
               >
                 <Bot className="w-5 h-5 mr-2" />
-                Chat with Us
+                Get in touch
               </button>
             </div>
 
@@ -91,14 +99,16 @@ const Hero_: React.FC = () => {
               <div className="text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start mb-2">
                   <Shield className="w-8 h-8 text-teal-300 mr-2" />
-                  <span className="text-3xl font-bold text-white">15+</span>
+                   <CountUp end={15} duration={7} suffix="+" className="text-3xl font-bold text-white" />
+               
                 </div>
                 <p className="text-blue-200">Years of Experience</p>
               </div>
               <div className="text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start mb-2">
                   <Heart className="w-8 h-8 text-teal-300 mr-2" />
-                  <span className="text-3xl font-bold text-white">10k+</span>
+                   <CountUp end={10000} duration={4} suffix="+" separator="," className="text-3xl font-bold text-white" />
+                
                 </div>
                 <p className="text-blue-200">Patients Served</p>
               </div>

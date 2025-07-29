@@ -145,16 +145,16 @@ const Footer: React.FC = () => {
               © 2024 Lima HealthCare. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="http://bangmetric.com/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="http://bangmetric.com/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="http://bangmetric.com/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 HIPAA Compliance
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a href="http://bangmetric.com/" className="text-gray-400 hover:text-white transition-colors duration-200">
                 Accessibility
               </a>
             </div>
