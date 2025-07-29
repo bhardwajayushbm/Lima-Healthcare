@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
 import CountUp from 'react-countup';
-import bgimage from '../assets/bgimage.png';
+import bgimgn from "../assets/bgimgn.png";
 
 
 const Hero_: React.FC = () => {
@@ -65,7 +65,7 @@ SN_CSM_EC.init({
  
       <div className="absolute inset-0 z-0">
         <img 
-          src={bgimage}
+          src={bgimgn}
           alt="Healthcare professional"
           className="w-full h-full object-cover"
         />
