@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
 import CountUp from 'react-countup';
-import bgimgnew from '../assets/bgimgnew.png';
 import bgimage from '../assets/bgimage.png';
 
 
@@ -88,7 +87,7 @@ SN_CSM_EC.init({
               Experience professional healthcare with compassion, convenience, and excellence.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-3">
+            <div className="flex flex-col sm:flex-row gap-3 mb-7">
               <button 
                 onClick={scrollToServices}
                 className="bg-gradient-to-r from-teal-500 to-green-500 text-white px-4 py-2 rounded-lg font-semibold text-lg hover:from-teal-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center group"
