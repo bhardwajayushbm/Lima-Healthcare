@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
-import Countup from 'react-countup';
+import CountUp from 'react-countup';
 
 const Hero_: React.FC = () => {
   const scrollToServices = () => {
