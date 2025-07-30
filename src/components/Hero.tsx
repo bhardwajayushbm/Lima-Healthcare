@@ -31,14 +31,14 @@ SN_CSM_EC.init({
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://dev349907.service-now.com/scripts/sn_csm_ec.js?v=5.6';
+    script.src = 'https://bangmetricllcdemo2.service-now.com/scripts/sn_csm_ec.js?v=5.6">';
     script.async = true;
 
     
     script.onload = () => {
       if (window.SN_CSM_EC) {
         window.SN_CSM_EC.init({
-          moduleID: "https://dev349907.service-now.com/#1d3902d1c303a210fd44f44ed40131f0",
+          moduleID: "https://bangmetricllcdemo2.service-now.com/#03d215c93b4b6210c280759c24e45ae2",
           loadFeature: window.SN_CSM_EC.loadEMFeature()
         });
       }
