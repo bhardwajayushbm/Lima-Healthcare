@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, Shield, Heart, Users, Bot } from 'lucide-react';
+import { ArrowRight, Shield, Heart, Users } from 'lucide-react';
 import CountUp from 'react-countup';
 import bgimgn from "../assets/bgimgn.png";
 
