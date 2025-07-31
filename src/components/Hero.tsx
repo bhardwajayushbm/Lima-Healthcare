@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import bgimgn from "../assets/bgimgn.png";
 
 
-const Hero_: React.FC = () => {
+const Hero: React.FC = () => {
   const scrollToServices = () => {
     const element = document.getElementById('services');
     if (element) {
@@ -138,4 +138,8 @@ SN_CSM_EC.init({
   );
 };
 
-export default Hero_;
+export default Hero;
+
+
+
+
